@@ -419,14 +419,11 @@ if __name__ == "__main__":
     N=20
     
     
-    # П - r1^2 / 24 =9,375
-    # K - 1/2
     global dt, Vo
     Vo = 15   #<=
     dt = np.float64(.01) # <=
     r1=30
-    init(1,215 * 5.0001, Vo,0* r1 * 1.24)# KT / Epsilon = v*48/r1^2.         2.66.     N=60 <=> nu=p = 0,1 - устарело
-    print((Vo*Vo*2/3) /(r1*r1/48))# KT / Epsilon ≈ 2.15
+    init(1,215 * 5.0001, Vo,0* r1 * 1.24)
+    
     loop(1)#r1/Epsilon^.5 
-    # mv^2 / epsilon = 12 * v^2 / r1^2
-    # epsilon = r1^2 /12 
+    
